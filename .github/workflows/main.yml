@@ -12,15 +12,3 @@ jobs:
           root_file: romanian.tex
           compiler: pdflatex
           args: -interaction=nonstopmode -shell-escape
-      - name: bibtex main
-        uses: dante-ev/latex-action@latest
-        with:
-          root_file: romanian.aux
-          compiler: bibtex
-          args: 
-      - name: pdflatex main
-        uses: dante-ev/latex-action@latest
-        with:
-          root_file: romanian.tex
-          compiler: pdflatex
-          args: -interaction=nonstopmode -shell-escape
