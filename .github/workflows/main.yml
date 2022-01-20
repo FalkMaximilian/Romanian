@@ -12,7 +12,7 @@ jobs:
           root_file: romanian.tex
           compiler: pdflatex
           args: -interaction=nonstopmode -shell-escape
-    steps:
+      
       - uses: actions/checkout@v2
 
       - run: mkdir -p pdf/
