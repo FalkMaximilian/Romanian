@@ -12,3 +12,14 @@ jobs:
           root_file: romanian.tex
           compiler: pdflatex
           args: -interaction=nonstopmode -shell-escape
+    steps:
+      - uses: actions/checkout@v2
+
+      - run: mkdir -p pdf/
+
+      - run: echo hello > pdf/world.txt
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: romanian.pdf
+          path: pdf/world.txt
