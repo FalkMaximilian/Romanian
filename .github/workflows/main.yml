@@ -13,13 +13,7 @@ jobs:
           compiler: pdflatex
           args: -interaction=nonstopmode -shell-escape
       
-      - uses: actions/checkout@v2
-
-      - run: mkdir -p pdf/
-
-      - run: echo romanian.pdf > pdf/romanian.pdf
-
       - uses: actions/upload-artifact@v2
         with:
-          name: romanian.pdf
-          path: pdf/romanian.pdf
+          name: PDF
+          path: romanian.pdf
