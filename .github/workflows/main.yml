@@ -17,9 +17,9 @@ jobs:
 
       - run: mkdir -p pdf/
 
-      - run: echo hello > pdf/world.txt
+      - run: echo romanian.pdf > pdf/romanian.pdf
 
       - uses: actions/upload-artifact@v2
         with:
           name: romanian.pdf
-          path: pdf/world.txt
+          path: pdf/romanian.pdf
