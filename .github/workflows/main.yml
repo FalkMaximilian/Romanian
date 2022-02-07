@@ -11,7 +11,7 @@ jobs:
         with:
           root_file: romanian.tex
           compiler: latexmk
-          args: -interaction=nonstopmode -shell-escape
+          args: -pdf -interaction=nonstopmode -shell-escape
       
       - uses: actions/upload-artifact@v2
         with:
