@@ -10,7 +10,7 @@ jobs:
         uses: dante-ev/latex-action@latest
         with:
           root_file: romanian.tex
-          compiler: pdflatex
+          compiler: latexmk
           args: -interaction=nonstopmode -shell-escape
       
       - uses: actions/upload-artifact@v2
